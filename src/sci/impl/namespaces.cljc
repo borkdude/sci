@@ -934,6 +934,9 @@
    'defrecord (with-meta records/defrecord
                 {:sci/macro true
                  :sci.impl/op needs-ctx})
+   'deftype (with-meta records/deftype
+              {:sci/macro true
+               :sci.impl/op needs-ctx})
    'delay (macrofy delay*)
    'delay? (copy-core-var delay?)
    #?@(:clj ['deliver (copy-core-var deliver)])
